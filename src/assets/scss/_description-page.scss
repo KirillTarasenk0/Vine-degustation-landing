@@ -1,0 +1,90 @@
+.main {
+    background-color: $main-section-bg-color;
+    .main__first-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .main__first-container {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            display: flex;
+            max-width: 1110px;
+            text-align: center;
+            .main__first-items {
+                border: 3px solid #C4C4C4;
+                padding: 60px 190px 60px 190px;
+                h3 {
+                    font-size: 36px;
+                    line-height: 54px;
+                    max-width: 736px;
+                    font-family: 'Playfair Display', serif;
+                }
+                .main__first-line {
+                    max-width: 160px;
+                    min-width: 60px;
+                    border: 1px solid #FFFFFF;
+                    margin-left: 285px;
+                    margin-right: 285px;
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                }
+                div {
+                    &:last-child {
+                        padding-top: 50px;
+                    }
+                }
+                p {
+                    font-size: $button-text-font-size;
+                    font-weight: 400;
+                    line-height: 24px;
+                    max-width: 733px;
+                }
+            }
+        }
+    }
+}
+
+
+/*.main {
+    background-color: var(--main-section-bg-color);
+}
+.main__first-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__first-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    max-width: 1110px;
+    text-align: center;
+}
+.main__first-items {
+    border: 3px solid #C4C4C4;
+    padding: 60px 190px 60px 190px;
+}
+.main__first-title {
+    font-size: 36px;
+    line-height: 54px;
+    max-width: 736px;
+    font-family: 'Playfair Display', serif;
+}
+.main__first-line {
+    max-width: 160px;
+    min-width: 60px;
+    border: 1px solid #FFFFFF;
+    margin-left: 285px;
+    margin-right: 285px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.main__first-article {
+    font-size: var(--button-text-font-size);
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 733px;
+}
+.main__first-image {
+    padding-top: 50px;
+}*/

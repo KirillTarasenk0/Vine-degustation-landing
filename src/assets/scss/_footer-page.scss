@@ -1,0 +1,83 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: $button-bg-color;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .footer__container {
+        max-width: 1110px;
+        .footer__navigation-container {
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid #FFFFFF;
+            .footer__navigation {
+                display: flex;
+                .footer__navigation-item {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 60px;
+                    a {
+                        font-weight: 400;
+                        font-size: $nav-item-font-size;
+                        line-height: 21px;
+                        text-align: center;
+                        text-decoration: none;
+                    }
+                    &:last-child {
+                        padding-right: 60px;
+                    }
+                }
+            }
+        }
+        .footer__contacts-container {
+            .footer__contacts {
+                display: flex;
+                
+                .footer__contacts-item {
+                    border-top: 1px solid #FFFFFF;
+                    border-bottom: 1px solid #FFFFFF;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-right: 60px;
+                    padding-left: 60px;
+                    display: flex;
+                    align-items: center;
+                    &:not(:first-child) {
+                        border-left: 1px solid #FFFFFF;
+
+                    }
+                    &:nth-child(3) {
+                        display: flex;
+                        & div:not(:first-child) {
+                            padding-left: 35px;
+                        }
+                    }
+                    h3 {
+                        font-weight: 600;
+                        font-size: $button-text-font-size;
+                        line-height: 21px;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    .footet__phone-container {
+                        a {
+                            font-weight: 600;
+                            font-size: $nav-item-font-size;
+                            line-height: 21px;
+                            text-align: center;
+                            text-decoration: none;
+                        }
+                    }
+                    .footer__contacts-item {
+                        p {
+                            font-weight: 600;
+                            font-size: $nav-item-font-size;
+                            line-height: 21px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

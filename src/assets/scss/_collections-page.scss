@@ -1,0 +1,119 @@
+.main__second-section {
+    background-color: $second-section-bg;
+    display: flex;
+    justify-content: center;
+    .main__second-container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        max-width: 1110px;
+        display: flex;
+        flex-direction: column;
+        .second__top-line {
+            max-width: 1110px;
+            border-top: 1px solid #998431;
+            margin-bottom: 60px;
+        }
+        .main__second-content {
+            display: flex;
+            .main__second-articles {
+                .main__articles-label {
+                    color: #000000;
+                    font-weight: 400;
+                    font-size: $button-text-font-size;
+                    line-height: 24px;
+                    padding-bottom: 30px;
+                }
+                .main__articles-title {
+                    color: $main-section-bg-color;
+                    font-size: 36px;
+                    line-height: 54px;
+                    max-width: 328px;
+                    margin-bottom: 30px;
+                }
+                .main__articles-line {
+                    max-width: 160px;
+                    border-top: 1px solid #282828;
+                    margin-bottom: 30px;
+                }
+                .articles__first-description {
+                    color: $main-section-bg-color;
+                    font-weight: 400;
+                    font-size: $nav-item-font-size;
+                    line-height: 21px;
+                    margin-bottom: 30px;
+                }
+                .main__articles-table {
+                    display: flex;
+                    .main__table-dates {
+                        p {
+                            color: $main-section-bg-color;
+                            font-weight: 400;
+                            font-size: $nav-item-font-size;
+                            line-height: 21px;
+                            padding: 26px 24px 26px 24px;
+                            border-right: 1px solid #282828;
+                            border-bottom: 1px solid #282828;
+                            &:last-child {
+                                border-bottom: 0px;
+                            }
+                        }
+                    }
+                    .main__table-articles {
+                        .main__table-article {
+                            padding-left: 30px;
+                            padding-bottom: 15px;
+                            padding-top: 5px;
+                            &:not(:last-child) {
+                                border-bottom: 1px solid #282828;
+                            }
+                            h3 {
+                                color: $main-section-bg-color;
+                                font-size: 18px;
+                                line-height: 27px;
+                                font-weight: 700;
+                                padding-bottom: 5px;
+                            }
+                            p {
+                                color: $main-section-bg-color;
+                                font-weight: 400;
+                                font-size: $nav-item-font-size;
+                                line-height: 21px;
+                            }
+                        }
+                    }
+                }
+                .vine__description{
+                    margin-top: 30px;
+                }
+                .main__articles-button {
+                    background-color: $button-bg-color;
+                    padding: 15px 30px 15px 30px;
+                    max-width: 254px;
+                    a {
+                        font-weight: 500;
+                        font-size: $button-text-font-size;
+                        line-height: 19px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        white-space: nowrap;
+                    }
+                }
+            }
+            .main__second-gallery {
+                margin-left: 125px;
+                .gallery__bottles-images {
+                    padding-top: 30px;
+                    display: flex;
+                    gap: 30px;
+                }
+            }  
+        }
+        .second__bottom-line {
+            margin-top: 60px;
+            max-width: 1110px;
+            border-top: 1px solid #998431;
+            margin-bottom: 60px;
+        } 
+    }
+}
