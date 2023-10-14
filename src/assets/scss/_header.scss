@@ -162,8 +162,20 @@
                             padding: 15px;
                         }
                         &:last-child {
-                            top: 12%;
+                            top: 8%;
                             left: -14%;
+                            margin-left: 0px;
+                        }
+                    }
+                    @media screen and (max-width: 445px) {
+                        & {
+                            margin-top: 500px;
+                            left: 33%;
+                            padding: 15px;
+                        }
+                        &:last-child {
+                            top: 8%;
+                            left: -18%;
                             margin-left: 0px;
                         }
                     }
@@ -173,7 +185,7 @@
                             padding: 15px;
                         }
                         &:last-child {
-                            top: 12%;
+                            top: 10%;
                             left: -28%;
                             margin-left: 0px;
                         }
