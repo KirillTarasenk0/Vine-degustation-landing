@@ -9,11 +9,28 @@
             padding-left: 286px;
             padding-right: 285px;
             position: relative;
+            @media screen and (max-width: 1140px) {
+                & {
+                    padding-left: 86px;
+                    padding-right: 85px;
+                }
+            }
+            @media screen and (max-width: 720px) {
+                & {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
             &::before {
                 content: url(../img/grape-image.png);
                 position: absolute;
                 top: -70px;
                 left: -50px;
+                @media screen and (max-width: 1220px) {
+                    & {
+                        content: unset;
+                    }
+                }
             }
             &::after {
                 content: url(../img/barrel-image.png);
@@ -22,8 +39,7 @@
                 right: -50px;
                 @media screen and (max-width: 1220px) {
                     & {
-                        top: -50px;
-                        right: -50px;
+                        content: unset;
                     }
                 }
             }
@@ -44,6 +60,12 @@
                     top: -38px;
                     padding: 10px 50px 10px 50px;
                     background-color: $main-section-bg-color;
+                    @media screen and (max-width: 550px) {
+                        & {
+                            font-size: 24px;
+                            padding: 10px 30px 10px 30px;
+                        }
+                    }
                 }
                 .main__forms-line {
                     width: 118px;
@@ -58,6 +80,16 @@
                     text-align: center;
                     max-width: 539px;
                     padding-bottom: 81px;
+                    @media screen and (max-width: 600px) {
+                        & {
+                            max-width: 350px;
+                        }
+                    }
+                    @media screen and (max-width: 415px) {
+                        & {
+                            max-width: 300px;
+                        }
+                    }
                 }
                 .main__forms {
                     .main__form {
@@ -66,6 +98,11 @@
                         .form__user-info {
                             display: flex;
                             flex-direction: row;
+                            @media screen and (max-width: 720px) {
+                                & {
+                                    flex-direction: column;
+                                }
+                            }
                             .form__user-name {
                                 input {
                                     width: 254px;
@@ -74,6 +111,22 @@
                                     border-bottom: 1px solid #FFFFFF;
                                     background-color: $main-section-bg-color;
                                     padding-bottom: 10px;
+                                    @media screen and (max-width: 720px) {
+                                        & {
+                                            width: 540px;
+                                            margin-bottom: 50px;
+                                        }
+                                    }
+                                    @media screen and (max-width: 600px) {
+                                        & {
+                                            width: 350px;
+                                        }
+                                    }
+                                    @media screen and (max-width: 415px) {
+                                        & {
+                                            width: 300px;
+                                        }
+                                    }
                                 }
                                 input::placeholder {
                                     font-weight: 500;
@@ -84,6 +137,11 @@
                             }
                             .form__user-phone {
                                 margin-left: 30px;
+                                @media screen and (max-width: 720px) {
+                                    & {
+                                        margin-left: 0;
+                                    }
+                                }
                                 input {
                                     width: 254px;
                                     height: 30px;
@@ -91,6 +149,22 @@
                                     border-bottom: 1px solid #FFFFFF;
                                     background-color: $main-section-bg-color;
                                     padding-bottom: 10px;
+                                    @media screen and (max-width: 720px) {
+                                        & {
+                                            width: 540px;
+                                            margin-bottom: 10px;
+                                        }
+                                    }
+                                    @media screen and (max-width: 600px) {
+                                        & {
+                                            width: 350px;
+                                        }
+                                    }
+                                    @media screen and (max-width: 415px) {
+                                        & {
+                                            width: 300px;
+                                        }
+                                    }
                                 }
                                 input::placeholder {
                                     font-weight: 500;
@@ -110,6 +184,16 @@
                                 border-bottom: 1px solid #FFFFFF;
                                 background-color: $main-section-bg-color;
                                 padding-bottom: 10px;
+                                @media screen and (max-width: 600px) {
+                                    & {
+                                        width: 350px;
+                                    }
+                                }
+                                @media screen and (max-width: 415px) {
+                                    & {
+                                        width: 300px;
+                                    }
+                                }
                             }
                             input::placeholder {
                                 font-weight: 500;
@@ -131,6 +215,18 @@
                                 line-height: 20px;
                                 letter-spacing: 1px;
                                 text-align: center;
+                                @media screen and (max-width: 600px) {
+                                    & {
+                                        width: 350px;
+                                        padding: 15px 109px 15px 109px;
+                                    }
+                                }
+                                @media screen and (max-width: 415px) {
+                                    & {
+                                        width: 300px;
+                                        padding: 15px 59px 15px 59px;
+                                    }
+                                }
                             }
                         }
                     }
