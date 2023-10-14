@@ -8,6 +8,21 @@
         max-width: 1110px;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 1140px) {
+            & {
+                max-width: 940px;
+            }
+        }
+        @media screen and (max-width: 950px) {
+            & {
+                max-width: 700px;
+            }
+        }
+        @media screen and (max-width: 779px) {
+            & {
+                max-width: 500px;
+            }
+        }
         .second__top-line {
             max-width: 1110px;
             border-top: 1px solid #998431;
@@ -15,6 +30,12 @@
         }
         .main__second-content {
             display: flex;
+            @media screen and (max-width: 779px) {
+                & {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
             .main__second-articles {
                 .main__articles-label {
                     color: #000000;
@@ -56,6 +77,11 @@
                             &:last-child {
                                 border-bottom: 0px;
                             }
+                            @media screen and (max-width: 950px) {
+                                & {
+                                    padding: 26px 20px 26px 20px;
+                                }
+                            }
                         }
                     }
                     .main__table-articles {
@@ -63,6 +89,25 @@
                             padding-left: 30px;
                             padding-bottom: 15px;
                             padding-top: 5px;
+                            @media screen and (max-width: 1140px) {
+                                & {
+                                    padding-left: 30px;
+                                    padding-bottom: 4px;
+                                    padding-top: 4px;
+                                }
+                            }
+                            @media screen and (max-width: 950px) {
+                                & {
+                                    padding-bottom: 4px;
+                                    padding-top: 4px;
+                                }
+                            }
+                            @media screen and (max-width: 779px) {
+                                & {
+                                    padding-bottom: 4px;
+                                    padding-top: 4px;
+                                }
+                            }
                             &:not(:last-child) {
                                 border-bottom: 1px solid #282828;
                             }
@@ -72,12 +117,57 @@
                                 line-height: 27px;
                                 font-weight: 700;
                                 padding-bottom: 5px;
+                                @media screen and (max-width: 1140px) {
+                                    & {
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                @media screen and (max-width: 950px) {
+                                    & {
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                @media screen and (max-width: 779px) {
+                                    & {
+                                        font-size: 18px;
+                                        line-height: 16px;
+                                        font-weight: 600;
+                                        padding-bottom: 10px;
+                                        padding-top: 10px;
+                                    }
+                                }
                             }
                             p {
                                 color: $main-section-bg-color;
                                 font-weight: 400;
                                 font-size: $nav-item-font-size;
                                 line-height: 21px;
+                                @media screen and (max-width: 1140px) {
+                                    & {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                    }
+                                }
+                                @media screen and (max-width: 950px) {
+                                    & {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                    }
+                                }
+                                @media screen and (max-width: 779px) {
+                                    & {
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 14px;
+                                        padding-bottom: 15px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -102,10 +192,56 @@
             }
             .main__second-gallery {
                 margin-left: 125px;
+                @media screen and (max-width: 1140px) {
+                    & {
+                        margin-left: 125px;
+                    }
+                }
+                @media screen and (max-width: 950px) {
+                    & {
+                        margin-left: 80px;
+                    }
+                }
                 .gallery__bottles-images {
                     padding-top: 30px;
                     display: flex;
                     gap: 30px;
+                    @media screen and (max-width: 950px) {
+                        & {
+                            padding-top: 0px;
+                            display: flex;
+                            gap: 10px;
+                            flex-direction: column;
+                        }
+                    }
+                    @media screen and (max-width: 779px) {
+                        & {
+                            padding-top: 0px;
+                            display: flex;
+                            gap: 10px;
+                            flex-direction: column;
+                        }
+                    }
+                    .gallery__bottles-image {
+                        .gallery__bottle-image {
+                            @media screen and (max-width: 950px) {
+                                & {
+                                    width: 366px;
+                                    height: 240px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .gallery__glass-image {
+                    .glass__image {
+                        @media screen and (max-width: 950px) {
+                            & {
+                                width: 366px;
+                                height: 400px;
+                            }
+                        }
+                    }
                 }
             }  
         }
