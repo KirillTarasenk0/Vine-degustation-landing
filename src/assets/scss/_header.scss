@@ -15,6 +15,31 @@
         display: flex;
         flex-direction: column;
         max-width: 1110px;
+        @media screen and (max-width: 1140px) {
+            & {
+                max-width: 1010px;
+            }
+        }
+        @media screen and (max-width: 950px) {
+            & {
+                max-width: 700px;
+            }
+        }
+        @media screen and (max-width: 779px) {
+            & {
+                max-width: 510px;
+            }
+        }
+        @media screen and (max-width: 650px) {
+            & {
+                max-width: 410px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            & {
+                max-width: 340px;
+            }
+        }
         .header__fixed-container {
             padding-top: 30px;
             .header__contacts-container {
@@ -50,6 +75,31 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    @media screen and (max-width: 1140px) {
+                        & {
+                            min-width: 215px;
+                        }
+                    }
+                    @media screen and (max-width: 950px) {
+                        & {
+                            min-width: 165px;
+                        }
+                    }
+                    @media screen and (max-width: 779px) {
+                        & {
+                            min-width: 135px;
+                        }
+                    }
+                    @media screen and (max-width: 650px) {
+                        & {
+                            min-width: 100px;
+                        }
+                    }
+                    @media screen and (max-width: 480px) {
+                        & {
+                            min-width: 90px;
+                        }
+                    }
                     &:not(:first-child) {
                         border-left: 1px solid #FFFFFF;
                     }
@@ -71,6 +121,12 @@
                 display: flex;
                 max-width: 1110px;
                 padding-left: 585px;
+                @media screen and (max-width: 480px) {
+                    & {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
                 .header__button {
                     padding: 15px 30px 15px 30px;
                     background-color: $button-bg-color;
@@ -78,6 +134,50 @@
                     top: 0;
                     left: 38%;
                     margin-top: 575px;
+                    @media screen and (max-width: 1140px) {
+                        & {
+                            left: 35%;
+                        }
+                    }
+                    @media screen and (max-width: 950px) {
+                        & {
+                            left: 29%;
+                        }
+                    }
+                    @media screen and (max-width: 779px) {
+                        & {
+                            left: 23%;
+                        }
+                    }
+                    @media screen and (max-width: 650px) {
+                        & {
+                            left: 18%;
+                            padding: 15px;
+                        }
+                    }
+                    @media screen and (max-width: 480px) {
+                        & {
+                            margin-top: 500px;
+                            left: 33%;
+                            padding: 15px;
+                        }
+                        &:last-child {
+                            top: 12%;
+                            left: -14%;
+                            margin-left: 0px;
+                        }
+                    }
+                    @media screen and (max-width: 400px) {
+                        & {
+                            left: 29%;
+                            padding: 15px;
+                        }
+                        &:last-child {
+                            top: 12%;
+                            left: -28%;
+                            margin-left: 0px;
+                        }
+                    }
                     &:last-child {
                         margin-left: 230px;
                     }
